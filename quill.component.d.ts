@@ -5,7 +5,7 @@ export declare class QuillComponent implements OnInit, OnDestroy, ControlValueAc
     private $el;
     theme: string;
     options: any;
-    protected editor: Quill;
+    protected editor: Quill.Quill;
     private defaultContents;
     constructor($el: ElementRef);
     ngOnInit(): void;
