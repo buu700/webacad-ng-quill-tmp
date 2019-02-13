@@ -1,0 +1,8 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,uselessCode} checked by tsc
+ */
+export { QuillComponent } from './quill.component';
+export { QuillModule } from './quill.module';
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290Ijoibmc6Ly9Ad2ViYWNhZC9uZy1xdWlsbC8iLCJzb3VyY2VzIjpbImluZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7QUFBQSxPQUFPLEVBQUMsY0FBYyxFQUFDLE1BQU0sbUJBQW1CLENBQUM7QUFDakQsT0FBTyxFQUFDLFdBQVcsRUFBQyxNQUFNLGdCQUFnQixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IHtRdWlsbENvbXBvbmVudH0gZnJvbSAnLi9xdWlsbC5jb21wb25lbnQnO1xuZXhwb3J0IHtRdWlsbE1vZHVsZX0gZnJvbSAnLi9xdWlsbC5tb2R1bGUnO1xuIl19
