@@ -1,43 +1,30 @@
 {
-  "_from": "@webacad/ng-quill",
-  "_id": "@webacad/ng-quill@0.2.0",
-  "_inBundle": false,
-  "_integrity": "sha512-YlUNK78ZbTM8mP4fkc/sK03gOSFg4iRi4nhY0WLVgbefFnAcsFNk9WzWaJqaXvo/DdHiNZ6ESJz/qFVVA1U65A==",
-  "_location": "/@webacad/ng-quill",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "@webacad/ng-quill",
-    "name": "@webacad/ng-quill",
-    "escapedName": "@webacad%2fng-quill",
-    "scope": "@webacad",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
+  "name": "@webacad/ng-quill",
+  "description": "Quill editor integration for angular forms",
+  "version": "0.2.0",
+  "keywords": [
+    "angular",
+    "forms",
+    "quill"
   ],
-  "_resolved": "https://registry.npmjs.org/@webacad/ng-quill/-/ng-quill-0.2.0.tgz",
-  "_shasum": "2c891dd3decb4157106641f2d62380cc405aad8a",
-  "_spec": "@webacad/ng-quill",
-  "_where": "/Users/buu700/tmp",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Web-ACAD/ng-quill.git"
+  },
+  "main": "bundles/webacad-ng-quill.umd.js",
   "author": {
     "name": "David Kudera",
     "email": "kudera.d@gmail.com",
     "url": "https://www.davidkudera.com"
   },
-  "bugs": {
-    "url": "https://github.com/Web-ACAD/ng-quill/issues"
+  "peerDependencies": {
+    "@angular/common": "^6.0",
+    "@angular/core": "^6.0",
+    "@angular/forms": "^6.0",
+    "quill": "*",
+    "rxjs": "^6.0"
   },
-  "bundleDependencies": false,
-  "dependencies": {
-    "tslib": "^1.9.0"
-  },
-  "deprecated": false,
-  "description": "Quill editor integration for angular forms",
   "devDependencies": {
     "@angular/compiler": "^6.0",
     "@angular/compiler-cli": "^6.0",
@@ -49,34 +36,16 @@
     "tslint": "^5.11.0",
     "typescript": "^2.9.0"
   },
-  "es2015": "fesm2015/webacad-ng-quill.js",
-  "esm2015": "esm2015/webacad-ng-quill.js",
-  "esm5": "esm5/webacad-ng-quill.js",
-  "fesm2015": "fesm2015/webacad-ng-quill.js",
-  "fesm5": "fesm5/webacad-ng-quill.js",
-  "homepage": "https://github.com/Web-ACAD/ng-quill#readme",
-  "keywords": [
-    "angular",
-    "forms",
-    "quill"
-  ],
-  "license": "MIT",
-  "main": "bundles/webacad-ng-quill.umd.js",
-  "metadata": "webacad-ng-quill.metadata.json",
   "module": "fesm5/webacad-ng-quill.js",
-  "name": "@webacad/ng-quill",
-  "peerDependencies": {
-    "@angular/common": "^7.0",
-    "@angular/core": "^7.0",
-    "@angular/forms": "^7.0",
-    "quill": "*",
-    "rxjs": "^6.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/Web-ACAD/ng-quill.git"
-  },
-  "sideEffects": false,
+  "es2015": "fesm2015/webacad-ng-quill.js",
+  "esm5": "esm5/webacad-ng-quill.js",
+  "esm2015": "esm2015/webacad-ng-quill.js",
+  "fesm5": "fesm5/webacad-ng-quill.js",
+  "fesm2015": "fesm2015/webacad-ng-quill.js",
   "typings": "webacad-ng-quill.d.ts",
-  "version": "0.2.0"
+  "metadata": "webacad-ng-quill.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
 }

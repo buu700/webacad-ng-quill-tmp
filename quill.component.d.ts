@@ -13,6 +13,7 @@ export declare class QuillComponent implements OnInit, OnDestroy, ControlValueAc
     writeValue(contents: any): void;
     registerOnChange(fn: any): void;
     registerOnTouched(fn: any): void;
+    setDisabledState(isDisabled: boolean): void;
     protected getValue(): any | undefined;
     protected isEmpty(contents: any): boolean;
     protected onTouched: () => void;
