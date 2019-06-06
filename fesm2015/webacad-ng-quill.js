@@ -14,6 +14,7 @@ class QuillComponent {
         this.$el = $el;
         this.theme = 'snow';
         this.options = null;
+        this.isDisabled = false;
         this.onTouched = () => { };
         this.onChange = (_) => { };
     }
@@ -27,6 +28,7 @@ class QuillComponent {
             options.theme = this.theme;
         }
         this.editor = new Quill(this.$el.nativeElement, options);
+        this.setDisabledState(this.isDisabled);
         if (typeof this.defaultContents !== 'undefined') {
             this.editor.setContents(this.defaultContents);
         }
@@ -73,6 +75,10 @@ class QuillComponent {
      * @return {?}
      */
     setDisabledState(isDisabled) {
+        this.isDisabled = isDisabled;
+        if (!this.editor) {
+            return;
+        }
         if (isDisabled) {
             this.editor.disable();
         }

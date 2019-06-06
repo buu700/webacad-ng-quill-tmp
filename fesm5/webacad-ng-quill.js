@@ -11,6 +11,7 @@ var QuillComponent = /** @class */ (function () {
         this.$el = $el;
         this.theme = 'snow';
         this.options = null;
+        this.isDisabled = false;
         this.onTouched = function () { };
         this.onChange = function (_) { };
     }
@@ -28,6 +29,7 @@ var QuillComponent = /** @class */ (function () {
             options.theme = this.theme;
         }
         this.editor = new Quill(this.$el.nativeElement, options);
+        this.setDisabledState(this.isDisabled);
         if (typeof this.defaultContents !== 'undefined') {
             this.editor.setContents(this.defaultContents);
         }
@@ -93,6 +95,10 @@ var QuillComponent = /** @class */ (function () {
      * @return {?}
      */
     function (isDisabled) {
+        this.isDisabled = isDisabled;
+        if (!this.editor) {
+            return;
+        }
         if (isDisabled) {
             this.editor.disable();
         }
